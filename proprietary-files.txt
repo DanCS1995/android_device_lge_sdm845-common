@@ -1017,6 +1017,19 @@ vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
 vendor/lib/vendor.qti.hardware.tui_comm@1.0.so
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 
+# Vibrator
+vendor/bin/immvibed
+vendor/bin/hw/vendor.lge.hardware.vibrator@2.0-service-immersion
+vendor/etc/init/vendor.lge.hardware.vibrator@2.0-service-immersion.rc
+vendor/lib64/hw/vendor.lge.hardware.vibrator@2.0-impl-immersion.so
+vendor/lib64/hw/vibrator.default.so
+vendor/lib64/vendor.lge.hardware.vibrator@2.0.so
+vendor/lib64/libpparam.so
+vendor/lib/hw/vendor.lge.hardware.vibrator@2.0-impl-immersion.so
+vendor/lib/hw/vibrator.default.so
+vendor/lib/vendor.lge.hardware.vibrator@2.0.so
+vendor/lib/libpparam.so
+
 # VPP
 vendor/etc/configstore/vpp.configstore.xml
 vendor/lib/libvppclient.so
