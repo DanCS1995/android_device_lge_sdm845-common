@@ -93,6 +93,12 @@ debug.sf.disable_hwc=0
 ro.surface_flinger.use_color_management=true
 debug.hwui.renderer=skiagl
 
+# Blur
+#ro.sf.blurs_are_expensive=1
+#ro.surface_flinger.supports_background_blur=1 
+#persist.sys.sf.disable_blurs=0
+#ro.launcher.blur.appLaunch=0
+
 # Voice assistant
 ro.opa.eligible_device=true
 
