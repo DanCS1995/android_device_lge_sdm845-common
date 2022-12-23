@@ -112,6 +112,11 @@ persist.sys.wfd.virtual=0
 # Disable Skia tracing by default
 debug.hwui.skia_atrace_enabled=false
 
+# Adaptive Suspend
+suspend.short_suspend_threshold_millis=2000
+suspend.short_suspend_backoff_enabled=true
+suspend.max_sleep_time_millis=40000
+
 # Media 
 debug.stagefright.omx_default_rank.sw-audio=1
 debug.stagefright.omx_default_rank=0
