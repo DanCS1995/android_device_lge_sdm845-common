@@ -19,12 +19,12 @@ $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay
+#   $(LOCAL_PATH)/overlay-lineage
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-lineage/lineage-sdk
+#PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
+#    $(LOCAL_PATH)/overlay-lineage/lineage-sdk
 
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
@@ -214,12 +214,12 @@ PRODUCT_PACKAGES += \
 endif
 
 # LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay-service.lge
+#PRODUCT_PACKAGES += \
+#    vendor.lineage.livedisplay-service.lge
 
 # Lineage Health
-PRODUCT_PACKAGES += \
-    vendor.lineage.health-service.default
+#PRODUCT_PACKAGES += \
+#    vendor.lineage.health-service.default
 
 $(call soong_config_set,lineage_health,charging_control_charging_path,/sys/class/power_supply/battery/battery_charging_enabled)
 
@@ -359,8 +359,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine-845.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-845.conf
 
 # Touch
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch-service.lge_sdm845
+#PRODUCT_PACKAGES += \
+#    vendor.lineage.touch-service.lge_sdm845
 
 # USB
 PRODUCT_PACKAGES += \
